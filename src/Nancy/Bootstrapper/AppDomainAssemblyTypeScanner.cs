@@ -68,7 +68,14 @@ namespace Nancy.Bootstrapper
             {
                 assembliesToScan = value;
                 UpdateTypes ();
+
+                RefreshSomething();
             }
+        }
+
+        private static void RefreshSomething()
+        {
+            Console.Write("Something performed");
         }
 
         /// <summary>
